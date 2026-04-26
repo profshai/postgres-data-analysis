@@ -1,6 +1,6 @@
 
 /* ----------- INNER Joining two tables 
-There are no NULL values
+An inner join keeps rows where the join condition is satisfied in both tables and discards everything else.
 --------- */
 SELECT hs.country, hs.year, hs.happiness_score, cs.continent FROM happiness_scores hs
 INNER JOIN country_stats cs
@@ -132,8 +132,6 @@ INNER JOIN products p2
 		   AND p1.product_name < p2.product_name
 ORDER BY price_diff DESC
 ;
-
-
 
 
 /* ------------------- CROSS JOINS -------------------------- 
