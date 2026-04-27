@@ -1,7 +1,8 @@
 /* ----------- [7] Common Table Expression (CTE) ------------------------ 
 -- Creates a named, temporary output that can be referenced within another query
 
-Why use CTE instead of subqueries:
+
+--------- Why use CTE instead of subqueries:
 1. Readability: complex queries are much easier to read
 2. Reusability: CTEs can be referenced multiple times within a query
 3. Recursiveness: CTEs can handle recursive queries
@@ -9,6 +10,7 @@ Why use CTE instead of subqueries:
 
 ---------------------------------- READABILITY
 -- Regions whose average happiness score is above the global average
+
 WITH overall_avg AS (
     SELECT AVG(happiness_score) AS avg_score
     FROM happiness_scores
@@ -22,6 +24,7 @@ HAVING AVG(happiness_score) > avg_score;
 
 
 -- Return each country's happiness score for the year alongside the country's average happiness score
+
 WITH country_hs AS (SELECT country, 
 							AVG(happiness_score) AS avg_hs_by_country
 					FROM happiness_scores
@@ -34,6 +37,7 @@ FROM happiness_scores hs LEFT JOIN country_hs
 
 ---------------------------------- REUSABILITY
 -- For each country, return countries from the same region with a lower happiness score in 2023
+
 WITH hs AS (SELECT * FROM happiness_scores
 			WHERE year = 2023)
 SELECT hs1.region, hs1.country, hs1.happiness_score,
@@ -202,6 +206,7 @@ UNION ALL
 SELECT	2024, country, ladder_score FROM happiness_scores_current;
 
 SELECT * FROM my_view;
+
 
 
 
