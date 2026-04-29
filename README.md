@@ -30,17 +30,17 @@ It highlights how I transform raw relational data into clean, interpretable insi
 ---
 
 ## 📂 Project Highlights
-⚾ Baseball Data Analysis Project: Player career analysis (age, tenure, transitions), Team-level analytics (spending, composition), Decade-based trend analysis, and Use of window functions and CTE pipelines
-📈 Salary & Workforce Analytics: Gender-based salary comparisons, Department-level analytics, Time-consistent joins for panel data, Dashboard-ready SQL outputs for Tableau
-📊 Tableau Integration: SQL queries structured for visualization, Double bar charts and comparative analytics, Clean aggregated outputs for BI tools
+- Baseball Data Analysis Project: Player career analysis (age, tenure, transitions), Team-level analytics (spending, composition), Decade-based trend analysis, and Use of window functions and CTE pipelines
+- Salary & Workforce Analytics: Gender-based salary comparisons, Department-level analytics, Time-consistent joins for panel data, Dashboard-ready SQL outputs for Tableau
+- Tableau Integration: SQL queries structured for visualization, Double bar charts and comparative analytics, Clean aggregated outputs for BI tools
 
 ---
 
 ## 🛠️ Tools & Technologies
--- PostgreSQL (Primary database system)
--- SQL (Advanced querying and analytics)
--- Python (psycopg2) (Database connectivity)
--- Tableau (Data visualization)
+- PostgreSQL (Primary database system)
+- SQL (Advanced querying and analytics)
+- Python (psycopg2) (Database connectivity)
+- Tableau (Data visualization)
 
 ---
 
